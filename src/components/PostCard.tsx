@@ -213,7 +213,9 @@ export const PostCard = ({
                           {formatDistanceToNow(new Date(comment.createdAt))} ago
                         </span>
                       </div>
-                      <p className="text-sm break-words">{comment.content}</p>
+                      <p className="text-sm break-words whitespace-pre-wrap">
+                        {comment.content}
+                      </p>
                     </div>
                   </div>
                 ))}
